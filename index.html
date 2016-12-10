@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>Safefirst by aksh98</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>Safefirst</h1>
+        <h2>A Safety device for Women</h2>
+        <a href="https://github.com/aksh98/SafeFirst" class="button"><small>View project on</small> GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h3>
+<a id="project-scope" class="anchor" href="#project-scope" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Project Scope</h3>
+
+<p>This was designed in a way that when you are faced with immediate danger, you need more than one way of alerting your close ones that you need help. And when you are in panic dealing with getting out of the situation , you don't have the time to take out your phone or when you are in front of the person putting you in danger, you cannot access your phone at that instant.
+ Security Devices like this are more than just a panic button, your alert can be sent discreetly just by the push of a button. </p>
+
+<h3>
+<a id="components-used" class="anchor" href="#components-used" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Components Used</h3>
+
+<p>The components used are:</p>
+
+<ul>
+<li>8051 Microcontroller</li>
+<li>MAX-232</li>
+<li>GPS Module</li>
+<li>GSM Module</li>
+<li>Push Button</li>
+<li>Power Supply </li>
+</ul>
+
+<p>The project uses an <strong>8051 microcontroller</strong> as the main hardware component. 
+Within it, the various architectural components are:</p>
+
+<ul>
+<li>Interrupts</li>
+<li>TX/RX pins</li>
+<li>Data Bus</li>
+<li>Address Bus</li>
+<li>Timer Delay</li>
+<li>Crystal Oscillator</li>
+<li>CPU</li>
+</ul>
+
+<h2>
+<a id="design" class="anchor" href="#design" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Design</h2>
+
+<p>The project aims to implement a personal protection device which can be used particularly by women or children to enforce safety in case of emergency situations. The device prototype could be extended to a miniature safety gizmo which could be clipped to jeans, belts, handbags or shoes when it is difficult or dangerous to access the phone.</p>
+
+<p>Intruder/Danger Sensed → Tap the device (or carry out a pre-defined custom gesture) → Message sent to 5 emergency contacts or 5 nearest police stations (can be hard-coded in the device).</p>
+
+<p><img src="https://github.com/aksh98/SafeFirst/blob/master/diag2.jpg?raw=true" alt="Block Diagram"></p>
+
+<h3>
+<a id="interfacing-diagram" class="anchor" href="#interfacing-diagram" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Interfacing Diagram</h3>
+
+<p><img src="https://github.com/aksh98/SafeFirst/blob/master/diag.jpg?raw=true" alt=""></p>
+
+<h3>
+<a id="milestones" class="anchor" href="#milestones" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Milestones</h3>
+
+<p>Milestones of our project:</p>
+
+<ol>
+<li>Firstly, figuring out how should we go about the project, all the steps and components which would be needed to make it upto our expectations.</li>
+<li>Making the GSM module work.</li>
+<li>Debugging our code.</li>
+<li>Setting up Baud-rate for GPS receiver. </li>
+</ol>
+
+<h3>
+<a id="source-code" class="anchor" href="#source-code" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Source Code</h3>
+
+<p>Our source code can be found <a href="https://github.com/aksh98/SafeFirst/blob/master/ourcode.c">here</a></p>
+
+<h3>
+<a id="concepts-used" class="anchor" href="#concepts-used" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Concepts Used</h3>
+
+<ul>
+<li>Hardware Interrupts</li>
+<li>Polling</li>
+<li>Flags</li>
+<li>Interrupt Service Routine (ISR)</li>
+<li>Timers</li>
+<li>Reset(Non maskable interrupt)</li>
+<li>Delay subroutines</li>
+<li>Direct Addressing</li>
+<li>Serial Communication</li>
+<li>Setting Baud Rate for different modules used(GPS,GSM)</li>
+<li>8051 microcontroller </li>
+</ul>
+
+<h3>
+<a id="results" class="anchor" href="#results" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Results</h3>
+
+<p>Our code has been tested <strong>successfully</strong>. We were able make a prototype of the device which sends messages to the listed contacts just on the push of a button.
+It was really fun working on the project. We got to learn about many things, GSM, GPS, interrupts and of course our 8051 microcontroller.</p>
+
+<h3>
+<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+
+<ul>
+<li>Akarsha Sehwag (<a href="https://github.com/aksh98" class="user-mention">@aksh98</a>)</li>
+<li>Aakash Deep Chhonkar</li>
+<li>YS Ramya</li>
+<li>Anannya Uberoi</li>
+<li>Sarthak Jindal</li>
+</ul>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/aksh98/SafeFirst/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/aksh98/SafeFirst/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/aksh98/SafeFirst"></a> is maintained by <a href="https://github.com/aksh98">aksh98</a>.</p>
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+  
+  </body>
+</html>
